@@ -10,8 +10,8 @@ async function getSAT() {
   let data = await res.json()
   sat.value = data.results
 }
-onMounted(() =>{
-  getPokemon()
+Created(() =>{
+  getSAT()
 })
 </script>
 
