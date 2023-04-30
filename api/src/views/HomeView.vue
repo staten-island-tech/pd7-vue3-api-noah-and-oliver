@@ -1,18 +1,23 @@
 <template>
-  <div></div>
+  <div class="container">
+    <h1>Click on data to see list of animals!</h1>
+    <h1>Click bar to see a bar graph!</h1>
+    <h1>Click pie to see a pie graph!</h1>
+  </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-const SAT = ref('')
-async function getSAT() {
-  let res = await fetch('https://data.cityofnewyork.us/resource/f9bf-2cp4.json')
-  let data = await res.json()
-  sat.value = data.results
-}
-Created(() =>{
-  getSAT()
-})
+
 </script>
 
-<style scoped></style>
+<style scoped>
+.container {
+  width: 80vw;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+</style>
