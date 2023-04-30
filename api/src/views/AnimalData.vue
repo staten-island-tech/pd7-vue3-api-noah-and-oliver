@@ -5,21 +5,21 @@
 </template>
 
 <script>
-export default{
+export default {
     data(){
     return{
-        SAT: {}
+        animal: {}
     }
     },
     mounted: async function(){
-        await getSAT()
+        await getAnimal()
     },method:{
-        getSAT:{
+        getAnimal:{
             async function() {
-  let res = await fetch('https://data.cityofnewyork.us/resource/f9bf-2cp4.json')
+  let res = await fetch('https://data.cityofnewyork.us/resource/fuhs-xmg2.json')
   let data = await res.json()
-  SAT.value = data 
-   console.log(SAT.value )
+  animal.value = data 
+   console.log(animal.value )
 }
         }
     }

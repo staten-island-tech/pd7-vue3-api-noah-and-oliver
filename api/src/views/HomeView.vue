@@ -5,7 +5,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-
+import App from "../components/ChartComponent.vue"
 
 </script>
 
