@@ -1,16 +1,17 @@
 <template>
   <div class="container">
+    <h1>Click on data to see list of animals!</h1>
+    <h1>Click bar to see a bar graph!</h1>
+    <h1>Click pie to see a pie graph!</h1>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import App from "../components/ChartComponent.vue"
 
 </script>
 
 <style scoped>
-.container{
+.container {
   width: 80vw;
   margin: 30px auto;
   display: flex;
