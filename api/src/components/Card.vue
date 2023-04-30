@@ -21,17 +21,17 @@ export default {
 </script>
 
 <style scoped>
-    div {
-        font-family: "Kalam", cursive;
-        height: fit-content;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 1rem 2rem;
+div {
+
+    outline: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 30vw;
+
   background: #f8f3e8;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  margin-bottom: 30px;
-  width: fit-content;
-  align-items: center;
-    }
+ 
+}
 </style>
