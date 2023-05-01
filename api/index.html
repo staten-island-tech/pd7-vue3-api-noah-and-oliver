@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
+    <title>SAT Results Donut Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div id="app">
+      <div class="flex-container">
+        <button @click="sortData('dbn')">DBN</button>
+        <button @click="sortData('school_name')">School Name</button>
+        <button @click="sortData('num_of_sat_test_takers')">Number of SAT Test Takers</button>
+        <button @click="sortData('sat_critical_reading_avg_score')">SAT Critical Reading Average Score</button>
+        <button @click="sortData('sat_math_avg_score')">SAT Math Average Score</button>
+        <button @click="sortData('sat_writing_avg_score')">SAT Writing Average Score</button>
+      </div>
+      <canvas id="donut-chart"></canvas>
+    </div>
+    <script src="App.vue"></script>
   </body>
 </html>
