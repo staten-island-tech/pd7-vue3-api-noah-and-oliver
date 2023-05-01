@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SAT Results Donut Chart</title>
+    <title>SAT Results</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="app">
       <div class="flex-container">
         <button @click="sortData('dbn')">DBN</button>
         <button @click="sortData('school_name')">School Name</button>
-        <button @click="sortData('num_of_sat_test_takers')">Number of SAT Test Takers</button>
-        <button @click="sortData('sat_critical_reading_avg_score')">SAT Critical Reading Average Score</button>
-        <button @click="sortData('sat_math_avg_score')">SAT Math Average Score</button>
-        <button @click="sortData('sat_writing_avg_score')">SAT Writing Average Score</button>
+        <button @click="sortData('num_of_sat_test_takers')">
+          Number of SAT Test Takers
+        </button>
+        <button @click="sortData('sat_critical_reading_avg_score')">
+          SAT Critical Reading Average Score
+        </button>
+        <button @click="sortData('sat_math_avg_score')">
+          SAT Math Average Score
+        </button>
+        <button @click="sortData('sat_writing_avg_score')">
+          SAT Writing Average Score
+        </button>
       </div>
       <canvas id="donut-chart"></canvas>
     </div>
-    <script src="App.vue"></script>
+    <script src="Home.vue"></script>
   </body>
 </html>
